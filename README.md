@@ -96,5 +96,5 @@ yarn preview
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 
-Feel free to explore and modify the project as needed. Happy coding!
+Let me know if you have any questions or need further assistance. I'm here to help!
 
