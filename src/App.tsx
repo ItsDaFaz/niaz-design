@@ -4,8 +4,10 @@ import Header from "./components/Header/Header";
 import ObjectiveGrid from "./components/ObjectiveGrid/ObjectiveGrid";
 import FeatureCarousel from "./components/FeatureCarousel/FeatureCarousel";
 import FooterBlock from "./components/FooterBlock/FooterBlock";
-
+import { useViewport } from "./useViewport";
 function App() {
+  const {isMobile} = useViewport();
+  console.log("isMobile", isMobile);
   return (
     <div className="min-h-screen min-w-full flex flex-col">
       <Header />
