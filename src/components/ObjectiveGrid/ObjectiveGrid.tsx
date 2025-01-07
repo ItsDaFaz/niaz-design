@@ -1,4 +1,7 @@
+import "./ObjectiveGrid.css"
+import { useViewport } from "../../useViewport";
 function ObjectiveGrid() {
+  const {isMobile} = useViewport();
 
   interface Objective{
     title:string,
@@ -26,7 +29,7 @@ function ObjectiveGrid() {
     
     {
       title:"Industry Research and Development",
-      description:"nitiate and publish annual research focused on sustainability innovations, positioning BAYLA as a thought leader."
+      description:"Initiate and publish annual research focused on sustainability innovations, positioning BAYLA as a thought leader."
     },
     
     
@@ -35,38 +38,21 @@ function ObjectiveGrid() {
   return (
     <div
       style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-      gap: "1rem",
-      justifyContent: "center",
-      alignItems: "center",
-      paddingLeft: "18vw",
-      paddingRight: "18vw",
-      paddingTop: "18vh",
-      }}
+        display: isMobile ? "grid" : "grid",
+        gridTemplateColumns: isMobile ? "1fr" : "repeat(3, minmax(0, 1fr))",
+        gap: isMobile ? "1rem" : "1rem",
+        justifyContent: isMobile ? "center" : "center",
+        alignItems: isMobile ? "center" : "center",
+        paddingLeft: isMobile ? "4vw" : "14vw",
+        paddingRight: isMobile ? "4vw" : "14vw",
+        paddingTop: isMobile ? "8vh" : "8vh",
+        }}
     >
       <div
-        style={{
-        background: "#0DA9C17D",
-        padding: "1rem",
-        borderRadius: "15px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "100%",
-        }}
-      >
+        id={isMobile?"objective-grid-feature-mobileview":"objective-grid-feature"}
+        >
         <h1
-        style={{
-          color: "#040404",
-          textAlign: "left",
-          marginLeft: "1rem",
-          marginRight: "1rem",
-          paddingTop: "2vh",
-          paddingBottom: "2vh",
-          fontWeight: 600,
-          fontSize:"48px"
-        }}
+        id={isMobile?"objective-grid-feature-h1-mobileview":"objective-grid-feature-h1"}
         >
         5 Key Objectives
         </h1>
@@ -74,41 +60,16 @@ function ObjectiveGrid() {
       {objectives.map((n, index) => (
       <div
         key={index}
-        style={{
-        background: "#0DA9C17D",
-        padding: "1rem",
-        borderRadius: "15px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "100%",
-        }}
+        id={isMobile?"objective-grid-feature-mobileview":"objective-grid-feature"}
       >
         <h3
-        style={{
-          color: "#515151",
-          textAlign: "left",
-          marginLeft: "1rem",
-          marginRight: "1rem",
-          paddingTop: "1vh",
-          paddingBottom: "1vh",
-          fontWeight: 500,
-          fontSize:"24px"
-        }}
+        id={isMobile?"objective-grid-feature-h3-mobileview":"objective-grid-feature-h3"}
         >
         {n.title}
         </h3>
 
         <p
-        style={{
-          color: "#3F3F3F",
-          textAlign: "left",
-          marginLeft: "1rem",
-          marginRight: "1rem",
-          fontWeight: 400,
-          fontSize: "15px",
-          paddingBottom: "2vh",
-        }}
+        id={isMobile?"objective-grid-feature-p-mobileview":"objective-grid-feature-p"}
         >
         {n.description}
         </p>

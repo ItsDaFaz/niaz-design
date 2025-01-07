@@ -1,48 +1,26 @@
 import bg1 from '../../assets/bg-1.png';
 import banner1button from '../../assets/banner1-button-icon.png';
+import "./Banner1.css"
+import { useViewport } from "../../useViewport";
 const Banner1 = () => {
+  const {isMobile} = useViewport();
   return (
     <div
+      id='banner'
       style={{
         backgroundImage: `url(${bg1})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        
-        
-       padding: '2.5rem',
-        margin: '0',
       }}
       
     >
       <h1
-        style={{
-          fontFamily: 'Poppins',
-          fontWeight: 500,
-          color: 'white',
-          fontSize: '48px',
-          paddingTop: '20vh',
-          paddingBottom: '6vh',
-          paddingLeft: '16vw',
-          paddingRight: '16vw',
-          letterSpacing: '-0.06rem',
-
-        }}
+       id={isMobile?'banner-h1-mobileview':'banner-h1'}
       >
         BAYLA is Dedicated to Positioning Bangladesh as The World’s Most
         Sustainable Apparel Sourcing Destination by 2030.
       </h1>
 
       <p
-        style={{
-          color: 'white',
-          fontSize: '24px',
-          
-          paddingLeft: '20vw',
-          paddingRight: '20vw',
-          fontWeight: 400,
-          letterSpacing: '-0.06rem',
-          
-        }}
+        id={isMobile?'banner-p-mobileview':'banner-p'}
       >
         Committed to advancing capacity building, industry innovation, and
         sustainable growth through targeted research and comprehensive training

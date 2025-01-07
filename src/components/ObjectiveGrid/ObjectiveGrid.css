@@ -1,0 +1,94 @@
+#objective-grid-feature {
+    background: #0DA9C17D;
+    padding: 1rem 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 37vh;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+#objective-grid-feature-mobileview{
+    background: #0DA9C17D;
+    /* padding: 1rem 0; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27vh;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+
+}
+
+#objective-grid-feature-h1{
+    color: #040404;
+    text-align: left;
+    margin-left: "1rem";
+    margin-right: "1rem";
+    padding-top: "2vh";
+    padding-bottom: "2vh";
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#objective-grid-feature-h1-mobileview{
+    color: #040404;
+    text-align: left;
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+    padding-top: 6vh;
+    padding-bottom: 2vh;
+    /* padding-left: 1vw; */
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#objective-grid-feature-h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #515151;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1vh;
+    letter-spacing: -0.02em;
+    
+    text-align: left;
+}
+#objective-grid-feature-h3-mobileview{
+    font-size: 24px;
+    font-weight: 500;
+    color: #515151;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1vh;
+    letter-spacing: -0.02em;
+    
+    text-align: left;
+}
+
+#objective-grid-feature-p {
+    color: #3F3F3F;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 2vh;
+    letter-spacing: 0.02em;
+
+}
+
+#objective-grid-feature-p-mobileview {  
+    color: #3F3F3F;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 1vh;
+    letter-spacing: 0.02em;
+
+}
