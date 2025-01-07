@@ -1,7 +1,9 @@
 import baylaLogo from '../../assets/baylaLogo.png';
 import headerMenu from '../../assets/header-menu.png';
+import { useViewport } from '../../useViewport';
 
 const Header = () => {
+  const { isMobile } = useViewport();
   return (
     <header
       style={{
@@ -10,7 +12,7 @@ const Header = () => {
         left: 0,
         width: '100%',
         backgroundColor: 'rgb(255, 255, 255)',
-        height: '11vh',
+        height: isMobile?'8vh':'11vh',
         display: 'grid', // Use CSS Grid for layout
         gridTemplateColumns: '1fr auto 1fr', // Create three columns
         alignItems: 'center', // Vertically align content
