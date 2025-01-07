@@ -26,10 +26,10 @@
 #objective-grid-feature-h1{
     color: #040404;
     text-align: left;
-    margin-left: "1rem";
-    margin-right: "1rem";
-    padding-top: "2vh";
-    padding-bottom: "2vh";
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     font-weight: 600;
     font-size: 3em;
 }
