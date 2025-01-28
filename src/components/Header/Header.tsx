@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import baylaLogo from "../../assets/baylaLogo.png";
 import headerMenu from "../../assets/header-menu.png";
 import { useViewport } from "../../useViewport";
@@ -56,9 +57,11 @@ const Header = () => {
             <span id="header-right-items">Board Members</span>
             <span id="header-right-items">Blogs</span>
             <span id="header-right-items">Contact Us</span>
-            <span id="header-right-items">
-              <button>Join BAYLA</button>
-            </span>
+            <Link to="/join">
+              <span id="header-right-items">
+                <button>Join BAYLA</button>
+              </span>
+            </Link>
           </div>
         )}
       </div>
