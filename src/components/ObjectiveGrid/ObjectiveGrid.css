@@ -1,17 +1,17 @@
 #objective-grid-feature {
-    background: #0DA9C17D;
+    background: #0da9c17d;
     padding: 1rem 0;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 37vh;
+    height: 42vh;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
 }
 
-#objective-grid-feature-mobileview{
-    background: #0DA9C17D;
+#objective-grid-feature-mobileview {
+    background: #0da9c17d;
     /* padding: 1rem 0; */
     border-radius: 15px;
     display: flex;
@@ -20,10 +20,9 @@
     height: 27vh;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
-
 }
 
-#objective-grid-feature-h1{
+#objective-grid-feature-h1 {
     color: #040404;
     text-align: left;
     margin-left: 1rem;
@@ -34,7 +33,7 @@
     font-size: 3em;
 }
 
-#objective-grid-feature-h1-mobileview{
+#objective-grid-feature-h1-mobileview {
     color: #040404;
     text-align: left;
     margin-left: 1rem;
@@ -52,12 +51,13 @@
     color: #515151;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 5vh;
     padding-top: 1vh;
     letter-spacing: -0.02em;
-    
+
     text-align: left;
 }
-#objective-grid-feature-h3-mobileview{
+#objective-grid-feature-h3-mobileview {
     font-size: 24px;
     font-weight: 500;
     color: #515151;
@@ -65,12 +65,12 @@
     margin-right: 1rem;
     padding-top: 1vh;
     letter-spacing: -0.02em;
-    
+
     text-align: left;
 }
 
 #objective-grid-feature-p {
-    color: #3F3F3F;
+    color: #3f3f3f;
     text-align: left;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -78,11 +78,10 @@
     font-size: 15px;
     padding-bottom: 2vh;
     letter-spacing: 0.02em;
-
 }
 
-#objective-grid-feature-p-mobileview {  
-    color: #3F3F3F;
+#objective-grid-feature-p-mobileview {
+    color: #3f3f3f;
     text-align: left;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -90,5 +89,4 @@
     font-size: 15px;
     padding-bottom: 1vh;
     letter-spacing: 0.02em;
-
 }

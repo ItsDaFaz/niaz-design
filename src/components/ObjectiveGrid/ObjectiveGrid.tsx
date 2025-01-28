@@ -1,39 +1,42 @@
-import "./ObjectiveGrid.css"
+import "./ObjectiveGrid.css";
 import { useViewport } from "../../useViewport";
 function ObjectiveGrid() {
-  const {isMobile} = useViewport();
+  const { isMobile } = useViewport();
 
-  interface Objective{
-    title:string,
-    description:string
+  interface Objective {
+    title: string;
+    description: string;
   }
-  const objectives:Objective[]=[
+  const objectives: Objective[] = [
     {
-      title:"Sustainability Compliance",
-      description:"Aim for 80% of member factories to adopt recognized sustainability certifications and practices by 2030."
+      title: "Sustainability Compliance",
+      description:
+        "Aim for 80% of member factories to adopt recognized sustainability certifications and practices by 2030.",
     },
     {
-      title:"Reduction in Carbon Emissions",
-      description:"Support the industry in achieving a 30% reduction in carbon emissions through energy-efficient practices by 2030."
+      title: "Reduction in Carbon Emissions",
+      description:
+        "Support the industry in achieving a 30% reduction in carbon emissions through energy-efficient practices by 2030.",
     },
-    
+
     {
-      title:"Innovation in Sustainable Materials",
-      description:"Increase the use of sustainable materials (recycled/organic) by 50% across member factories."
+      title: "Innovation in Sustainable Materials",
+      description:
+        "Increase the use of sustainable materials (recycled/organic) by 50% across member factories.",
     },
-    
+
     {
-      title:"Capacity Building and Training",
-      description:"Establish training programs for at least 5,000 young professionals in sustainable practices, leadership, and innovation by 2030."
+      title: "Capacity Building and Training",
+      description:
+        "Establish training programs for at least 5,000 young professionals in sustainable practices, leadership, and innovation by 2030.",
     },
-    
+
     {
-      title:"Industry Research and Development",
-      description:"Initiate and publish annual research focused on sustainability innovations, positioning BAYLA as a thought leader."
+      title: "Industry Research and Development",
+      description:
+        "Initiate and publish annual research focused on sustainability innovations, positioning BAYLA as a thought leader.",
     },
-    
-    
-  ]
+  ];
 
   return (
     <div
@@ -46,34 +49,54 @@ function ObjectiveGrid() {
         paddingLeft: isMobile ? "4vw" : "14vw",
         paddingRight: isMobile ? "4vw" : "14vw",
         paddingTop: isMobile ? "8vh" : "8vh",
-        }}
+      }}
     >
       <div
-        id={isMobile?"objective-grid-feature-mobileview":"objective-grid-feature"}
-        >
+        id={
+          isMobile
+            ? "objective-grid-feature-mobileview"
+            : "objective-grid-feature"
+        }
+      >
         <h1
-        id={isMobile?"objective-grid-feature-h1-mobileview":"objective-grid-feature-h1"}
+          id={
+            isMobile
+              ? "objective-grid-feature-h1-mobileview"
+              : "objective-grid-feature-h1"
+          }
         >
-        5 Key Objectives
+          5 Key Objectives
         </h1>
       </div>
       {objectives.map((n, index) => (
-      <div
-        key={index}
-        id={isMobile?"objective-grid-feature-mobileview":"objective-grid-feature"}
-      >
-        <h3
-        id={isMobile?"objective-grid-feature-h3-mobileview":"objective-grid-feature-h3"}
+        <div
+          key={index}
+          id={
+            isMobile
+              ? "objective-grid-feature-mobileview"
+              : "objective-grid-feature"
+          }
         >
-        {n.title}
-        </h3>
+          <h3
+            id={
+              isMobile
+                ? "objective-grid-feature-h3-mobileview"
+                : "objective-grid-feature-h3"
+            }
+          >
+            {n.title}
+          </h3>
 
-        <p
-        id={isMobile?"objective-grid-feature-p-mobileview":"objective-grid-feature-p"}
-        >
-        {n.description}
-        </p>
-      </div>
+          <p
+            id={
+              isMobile
+                ? "objective-grid-feature-p-mobileview"
+                : "objective-grid-feature-p"
+            }
+          >
+            {n.description}
+          </p>
+        </div>
       ))}
     </div>
   );
