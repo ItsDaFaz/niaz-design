@@ -12,17 +12,49 @@
 
 #joinContainer {
     background: #ffffff29;
-    height: 512px;
+    /* height: 512px; */
 
     backdrop-filter: blur(16);
     padding-top: 10vh;
     padding-bottom: 10vw;
-    padding-left: 14vw;
-    padding-right: 14vw;
-    margin: 11vh 7.5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    margin: 11vh 2vw;
     border-radius: 24px;
 }
 
+.input-field {
+    width: 100%;
+    height: 12.2vh;
+    min-height: 9.2vh; /* new */
+    border-radius: 16px;
+    border: none;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.input-field::placeholder {
+    color: #b4b3b3;
+    size: 16px;
+    fong-weight: 500;
+    letter-spacing: -0.03em;
+    opacity: 1; /* Ensures the placeholder is fully opaque */
+}
+#submit-button {
+    background-color: #0da9c1;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    min-height: 5rem; /* new */
+    border-radius: 16px;
+    border: none;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-right: 0;
+}
 #banner-h1 {
     font-family: "Poppins";
     font-weight: 500;
@@ -66,4 +98,37 @@
     padding-left: 18vw;
     padding-right: 18vw;
     letter-spacing: -0.06rem;
+}
+
+#mission-statement-container {
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #3f3d3f;
+    background: #ffffff;
+    /* font-size: 2em; */
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    letter-spacing: -0.06rem;
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    border-radius: 24px;
+}
+#mission-h5 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.002em;
+    text-align: justify;
+    margin-bottom: 0;
+}
+#mission-p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.002em;
+    text-align: justify;
+    margin-top: 0;
 }
