@@ -5,6 +5,7 @@ import { useViewport } from "../../useViewport";
 import "./Header.css";
 const Header = () => {
   const { isMobile } = useViewport();
+
   return (
     <header
       style={{
@@ -13,7 +14,7 @@ const Header = () => {
         left: 0,
         width: "100%",
         backgroundColor: "rgb(255, 255, 255)",
-        height: isMobile ? "8vh" : "12vh",
+        height: isMobile ? "10vh" : "12vh",
         display: "grid", // Use CSS Grid for layout
         gridTemplateColumns: "1fr auto 1fr", // Create three columns
         alignItems: "center", // Vertically align content
@@ -48,7 +49,7 @@ const Header = () => {
           <img
             src={headerMenu}
             style={{
-              height: "15%",
+              height: "1%",
               objectFit: "contain",
               cursor: "pointer",
               justifySelf: "end", // Aligns to the right edge
