@@ -24,7 +24,12 @@ function BoardMemberFrame({ name, designation }: BoardMemberFrameProps) {
     >
       {/* <img src={image} alt={title} style={{ width: "150px", height: "150px", borderRadius: "10px" }} /> */}
       <div
-        style={{ height: "41vh", width: "100%", backgroundColor: "#E4E4E4" }}
+        style={{
+          height: "41vh",
+          width: "100%",
+          backgroundColor: "#E4E4E4",
+          borderRadius: "28px",
+        }}
       ></div>
       <div style={{ width: "100%", textAlign: "center" }}>
         <h3
