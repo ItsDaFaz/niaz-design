@@ -14,7 +14,7 @@
     background: #ffffff29;
     /* height: 512px; */
 
-    backdrop-filter: blur(16);
+    backdrop-filter: blur(16px);
     padding-top: 10vh;
     padding-bottom: 10vw;
     padding-left: 7vw;
@@ -33,11 +33,14 @@
     box-sizing: border-box;
     background-color: white;
     color: black;
+    font-size: 1rem;
+    font-family: Poppins;
 }
 
 .input-field::placeholder {
     color: #b4b3b3;
-    size: 16px;
+    font-size: 1rem;
+    font-family: Poppins;
     fong-weight: 500;
     letter-spacing: -0.03em;
     opacity: 1; /* Ensures the placeholder is fully opaque */
