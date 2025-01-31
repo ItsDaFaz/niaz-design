@@ -19,17 +19,20 @@ const Header = () => {
         alignItems: "center", // Vertically align content
         padding: "0 7.5vw", // Padding for responsiveness
         boxSizing: "border-box",
+        zIndex: 1000,
       }}
     >
       {/* Empty div to push logo to center */}
       <div></div>
 
       {/* Centered Logo */}
-      <img
-        src={baylaLogo}
-        style={{ height: "3.5rem", objectFit: "contain" }}
-        alt="Logo"
-      />
+      <Link to="/">
+        <img
+          src={baylaLogo}
+          style={{ height: "3.5rem", objectFit: "contain" }}
+          alt="Logo"
+        />
+      </Link>
 
       {/* Menu Button on the far right */}
       <div
