@@ -57,7 +57,9 @@ const Header = () => {
           />
         ) : (
           <div>
-            <span id="header-right-items">Board Members</span>
+            <Link to="/board-members">
+              <span id="header-right-items">Board Members</span>
+            </Link>
             <span id="header-right-items">Blogs</span>
             <span id="header-right-items">Contact Us</span>
             <Link to="/join">
