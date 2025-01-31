@@ -54,7 +54,10 @@ const BannerBoardMembers = () => {
             marginBottom: "8vh",
           }}
         >
-          <span style={{ fontWeight: 600 }}>BAYLA</span> Board
+          <span style={{ fontWeight: 600, backgroundColor: "#FFFFFF00" }}>
+            BAYLA
+          </span>{" "}
+          Board
         </h1>
       </div>
       <div id="joinContainer">
