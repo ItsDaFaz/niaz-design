@@ -1,8 +1,6 @@
 import "../../App.css";
 import BannerJoin from "../../components/BannerJoin/BannerJoin";
 import Header from "../../components/Header/Header";
-import ObjectiveGrid from "../../components/ObjectiveGrid/ObjectiveGrid";
-import FeatureCarousel from "../../components/FeatureCarousel/FeatureCarousel";
 import FooterBlock from "../../components/FooterBlock/FooterBlock";
 
 import { useViewport } from "../../useViewport";
