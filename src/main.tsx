@@ -8,6 +8,7 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App.tsx";
 import Join from "./pages/Join/Join.tsx";
+import BoardMembers from "./pages/BoardMembers/BoardMembers.tsx";
 import { ViewportProvider } from "./ViewportContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/join" element={<Join />} />
+          <Route path="board-members" element={<BoardMembers />} />
         </Routes>
       </BrowserRouter>
     </ViewportProvider>
