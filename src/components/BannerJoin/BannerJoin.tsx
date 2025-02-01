@@ -22,7 +22,13 @@ const BannerJoin = () => {
         >
           {/* Mission Statement */}
           <div>
-            <div id="mission-statement-container">
+            <div
+              id={
+                isMobile
+                  ? "mission-statement-container-mobileview"
+                  : "mission-statement-container"
+              }
+            >
               <div
                 style={{
                   display: "flex",
@@ -95,7 +101,7 @@ const BannerJoin = () => {
                 style={{
                   display: "grid",
                   gridTemplateColumns: "1fr",
-                  gap: "6.7vh",
+                  gap: isMobile ? "3.7vh" : "6.7vh",
                 }}
               >
                 <div>
@@ -104,7 +110,9 @@ const BannerJoin = () => {
                     id="fullName"
                     name="fullName"
                     placeholder="Full Name"
-                    className="input-field"
+                    className={
+                      isMobile ? "input-field-mobileview" : "input-field"
+                    }
                   />
                 </div>
                 <div
@@ -120,7 +128,9 @@ const BannerJoin = () => {
                       id="designation"
                       name="designation"
                       placeholder="Designation"
-                      className="input-field"
+                      className={
+                        isMobile ? "input-field-mobileview" : "input-field"
+                      }
                     />
                   </div>
                   <div>
@@ -129,7 +139,9 @@ const BannerJoin = () => {
                       id="organization"
                       name="organization"
                       placeholder="Organization"
-                      className="input-field"
+                      className={
+                        isMobile ? "input-field-mobileview" : "input-field"
+                      }
                     />
                   </div>
                 </div>
@@ -146,7 +158,9 @@ const BannerJoin = () => {
                       // id="email"
                       name="email"
                       placeholder="E-mail"
-                      className="input-field"
+                      className={
+                        isMobile ? "input-field-mobileview" : "input-field"
+                      }
                     />
                   </div>
                   <div>
@@ -155,7 +169,9 @@ const BannerJoin = () => {
                       id="contact"
                       name="contact"
                       placeholder="Contact"
-                      className="input-field"
+                      className={
+                        isMobile ? "input-field-mobileview" : "input-field"
+                      }
                     />
                   </div>
                 </div>
@@ -165,7 +181,9 @@ const BannerJoin = () => {
                     id="address"
                     name="address"
                     placeholder="Address"
-                    className="input-field"
+                    className={
+                      isMobile ? "input-field-mobileview" : "input-field"
+                    }
                   />
                 </div>
                 <div
@@ -181,7 +199,9 @@ const BannerJoin = () => {
                       // id="dob"
                       name="dob"
                       placeholder="Date of Birth"
-                      className="input-field"
+                      className={
+                        isMobile ? "input-field-mobileview" : "input-field"
+                      }
                     />
                   </div>
                   {!isMobile && (
@@ -202,7 +222,9 @@ const BannerJoin = () => {
                       <div></div>
                     </>
                   )}
-                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <div
+                    style={{ display: "flex", justifyContent: "flex-start" }}
+                  >
                     <button type="submit" id="submit-button">
                       Submit Application
                     </button>
